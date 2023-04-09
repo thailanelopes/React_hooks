@@ -1,15 +1,19 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as  Router, Link } from 'react-router-dom';
 
 import Usuarios from './components/Usuarios/Usuarios'
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <header>
         <nav>
           <ul>
-            <li><a href='/'>Inicio</a></li>
+            <li>
+              <Link href='/'>Inicio</Link>
+              </li>
             <li><a href='/usuarios'>Usuarios Cadastrados</a></li>
             <li><a href='/adicionar'>Adicionar Usuarios</a></li>
           </ul>
@@ -19,6 +23,7 @@ function App() {
         <Usuarios />
       </main>
     </div>
+    </Router>
   );
 }
 
