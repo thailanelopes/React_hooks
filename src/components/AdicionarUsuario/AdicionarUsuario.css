@@ -1,15 +1,15 @@
 .AdicionarUsuario {
   margin: 2rem 0;
   padding: 1.25rem;
-  background-color: #FFF;
-  background-color: #FFEBF3;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .14);
+  background-color: #fffefe;
+  background-color: #000000;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
 }
 
 .AdicionarUsuario h2 {
   font-size: 1.25rem;
   text-transform: uppercase;
-  color: #CA2C68;
+  color: #fdfdfd;
   margin: .25rem 0;
 }
 
@@ -30,6 +30,7 @@
 .AdicionarUsuario label {
   display: inline-block;
   margin-bottom: .5rem;
+  color: #f5f3f3;
 }
 
 .AdicionarUsuario input {
@@ -39,18 +40,18 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #FFF;
-  border: 1px solid #FFBCD8;
+  color: #ffffff;
+  background-color: #fdf9f9;
+  border: 1px solid #ffffff;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .AdicionarUsuario button {
-  color: #FFF;
+  color: #000000;
   cursor: pointer;
   display: inline-block;
-  background-color: #FF6CA8;
+  background-color: #f5f3f3;
   text-align: center;
   vertical-align: middle;
   border: 1px solid transparent;
@@ -65,10 +66,10 @@
 
 .AdicionarUsuario input:focus, .AdicionarUsuario button:focus {
   outline: 0;
-  border-color: #FF8CC8;
-  box-shadow: 0 0 0 .2rem rgba(255, 188, 216, .5);
+  border-color: #fcf9f9;
+  box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 0.999);
 }
 
 .AdicionarUsuario button:hover {
-  background-color: #DA3C78;
+  background-color: #5c5e5b;
 }

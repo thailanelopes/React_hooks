@@ -3,22 +3,23 @@
   position: relative;
   margin: 1rem 0;
   border-radius: .25rem;
-  background-color: #FFF;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .14);
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
 }
 
 .Usuario:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .14);
+  box-shadow: 0 5px 10px rgb(255, 255, 255);
 }
 
 .Usuario ul {
   padding-left: 0;
   margin: 0;
   list-style: none;
+  background-color: rgb(255, 255, 255);
 }
 
 .Usuario ul li strong {
-  color: #DA3C78;
+  color: #000000;
 }
 
 .Usuario button {
@@ -41,6 +42,6 @@
 
 .Usuario button:hover,
 .Usuario button:focus {
-  color: #FFF;
-  background-color: #FF6CA8;
+  color: #fafafa;
+  background-color: #dd0909;
 }
