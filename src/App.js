@@ -5,6 +5,7 @@ import { BrowserRouter as  Router, NavLink, Switch, Route } from 'react-router-d
 import Usuarios from './components/Usuarios/Usuarios'
 import AdicionarUsuario from './components/AdicionarUsuario/AdicionarUsuario';
 import Home from './components/Home/Home';
+import DetalhesUsuario from './components/DetalhesUsuario/DetalhesUsuario';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
         <Route path="/" exact>
             <Home />
           </Route>
+          <Route path="/usuarios/:codigo">
+            <DetalhesUsuario />
+          </Route>
           <Route path="/usuarios">
             <Usuarios />
           </Route>
@@ -37,20 +41,14 @@ function App() {
             <AdicionarUsuario />
           </Route>
           <Route path="*">
-            <PaginaNaoEncontrada />
+            <h1>404</h1>
+           <p>Pagina nao encontrada!</p>
           </Route>
         </Switch>
       </main>
     </div>
     </Router>
   );
-}
-
-function PaginaNaoEncontrada () {
-  return<>
-  <h1>404</h1>
-  <p>Pagina nao encontrada!</p>
-  </>
 }
 
 export default App;
